@@ -13,7 +13,7 @@
 	"tailwind": {
 		"baseColor": "zinc",
 		"config": "",
-		"css": "app/app.css",
+		"css": "src/index.css",
 		"cssVariables": true,
 		"prefix": ""
 	},
