@@ -1,0 +1,16 @@
+{
+	"author": "João Pedro Araújo",
+	"dependencies": {
+		"json-server": "1.0.0-beta.3"
+	},
+	"description": "API para o projeto Fashion Stock",
+	"keywords": ["api", "fashion-stock"],
+	"license": "MIT",
+	"main": "index.js",
+	"name": "@fashion-stock/api",
+	"packageManager": "pnpm@10.6.5",
+	"scripts": {
+		"start:dev": "json-server db.json -p 3333"
+	},
+	"version": "1.0.0"
+}
