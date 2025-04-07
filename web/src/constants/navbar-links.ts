@@ -1,22 +1,14 @@
 export const navbarLinks = [
 	{
-		path: "/dashboard",
-		label: "Dashboard",
+		path: "/",
+		label: "Início",
+	},
+	{
+		path: "/categories",
+		label: "Categorias",
 	},
 	{
 		path: "/products",
 		label: "Produtos",
-	},
-	{
-		path: "/stock",
-		label: "Estoque",
-	},
-	{
-		path: "/suppliers",
-		label: "Fornecedores",
-	},
-	{
-		path: "/reports",
-		label: "Relatórios",
 	},
 ] as const;

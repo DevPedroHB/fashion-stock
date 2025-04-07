@@ -1,6 +1,7 @@
 import { navbarLinks } from "@/constants/navbar-links";
 import { Shirt, User2 } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
+import { Link } from "./ui/link";
 
 export function Navbar() {
 	return (
@@ -16,21 +17,13 @@ export function Navbar() {
 					{navbarLinks.map((link) => {
 						return (
 							<li key={link.path}>
-								<a
-									href={link.path}
-									className="font-medium hover:text-primary transition-all"
-								>
-									{link.label}
-								</a>
+								<Link to={link.path}>{link.label}</Link>
 							</li>
 						);
 					})}
 				</ul>
 				<div className="flex items-center gap-4">
-					<a
-						href="/"
-						className="flex items-center gap-2 font-medium hover:text-primary transition-all"
-					>
+					<Link to="/" className="flex items-center gap-2">
 						<Avatar className="size-6">
 							<AvatarImage
 								src="https://github.com/DevAraujo128.png"
@@ -41,7 +34,7 @@ export function Navbar() {
 							</AvatarFallback>
 						</Avatar>
 						Entrar
-					</a>
+					</Link>
 				</div>
 			</nav>
 		</header>

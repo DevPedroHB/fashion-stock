@@ -1,8 +1,13 @@
 import { Card } from "@/components/ui/card";
 import { CARD_DIRECTION, dashboardCard } from "@/constants/dashboard-card";
+import { createFileRoute } from "@tanstack/react-router";
 import { ArrowDown, ArrowUp } from "lucide-react";
 
-export function HomeDashboard() {
+export const Route = createFileRoute("/")({
+	component: Index,
+});
+
+function Index() {
 	return (
 		<section className="flex flex-col gap-4">
 			<h1 className="font-bold text-2xl">Dashboard</h1>
